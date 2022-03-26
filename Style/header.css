@@ -3,11 +3,9 @@
     position: sticky;
     top: 0;
     background-color: white;
-    z-index: 4;
+    z-index: 2;
 }
 .container header .navbar{
-    
-    
     display: flex;
     justify-content: space-between;
     
