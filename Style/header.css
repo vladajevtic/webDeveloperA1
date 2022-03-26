@@ -1,0 +1,93 @@
+.container header{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 4;
+}
+.container header .navbar{
+    
+    
+    display: flex;
+    justify-content: space-between;
+    
+}
+.container header .navbar .navbar-list{
+    width: 100%;
+    background-color: inherit;
+    display:flex;
+    justify-content: space-between;
+    
+    padding: 10px;
+}
+.container header .navbar .navbar-list #firstlist{
+    display: flex;
+}
+.container header .navbar .navbar-list #firstlist ul{
+    display: none;
+    width: 100%;
+    padding: 0;
+    list-style: none;  
+}
+.container header .navbar .navbar-list .second-list{
+    display: flex;
+    
+    
+}
+.container header .navbar .navbar-list #firstlist ul li{    
+    text-align: center;    
+}
+
+.container header .navbar .navbar-list #firstlist ul li a{
+    display: block;
+    text-decoration: none;
+    color: #000000;
+    padding-top: 20px;
+    padding-left:  20px;
+}
+.container header .navbar .navbar-list .second-list a{
+    display: block;
+    text-decoration: none;
+    color: #000000;
+    padding-top: 20px;
+    
+}
+.container header .navbar .navbar-list .second-list .moja1{
+    padding-right: 10px;
+}
+.container header .navbar .navbar-list .second-list .icon{
+    padding: 20px 10px;
+}
+.container header .navbar .navbar-list .second-list #hamburger{
+    padding: 10px 10px;
+}
+
+
+
+@media screen and (min-width: 768px){
+   
+    .container header .navbar .navbar-list #firstlist ul{
+        display: flex;
+        padding: 0;
+        list-style: none;  
+    }
+    .container header .navbar .navbar-list .second-list #hamburger{
+        display: none;
+    }
+  
+}
+@media screen and (min-width: 992px){
+
+    .container header .navbar .navbar-list{
+        width: 920px;
+        margin: auto;
+    }
+    .container header .navbar .navbar-list #firstlist ul{
+        display: flex;
+        padding: 0;
+        list-style: none;  
+    }
+    .container header .navbar .navbar-list .second-list #hamburger{
+        display: none;
+    }
+} 
