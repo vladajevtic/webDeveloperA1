@@ -1,0 +1,18 @@
+aside .side-btn{
+    position: fixed;
+    top: 250px;
+    right: 0;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 4;
+}
+aside .side-btn button{
+    border: none;
+    background-color: rgba(252, 248, 248, 0.103);
+    z-index: 4;
+}
+aside .side-btn button span{
+    font-size: 50px;
+}
