@@ -1,0 +1,58 @@
+.slider{
+    position: relative;
+    width: 100%;
+    padding: 20px;
+}
+.slider .photo{
+    position: relative;
+    width: 100%;
+}
+.slider .photo img{
+    width: 100%;
+}
+.slider .photo #left{
+    display: none;
+    position: absolute;
+    top: 120px;
+    left:10px;
+    background-color: inherit;
+    border: none;
+}
+.slider .photo #left span{
+    font-size: 80px;
+    color: rgba(0, 0, 0, 0.678);
+}
+.slider .photo #left span:hover{
+    color:rgba(240, 248, 255, 0.301);
+}
+.slider .photo #right{
+    position: absolute;
+    top: 120px;
+    right:10px;
+    background-color: inherit;
+    border: none;
+}
+
+.slider .photo #right span{
+    font-size: 80px;
+    color: rgba(240, 248, 255, 0.301);
+}
+.slider .photo #right span:hover{
+    color:rgba(0, 0, 0, 0.678);
+}
+
+.slider .dodaci{
+    position: absolute;
+    top: 120px;
+    left: 120px;
+    
+    color: aliceblue;
+}
+.slider .dodaci .tekst2{
+    display: none;
+}
+.slider .dodaci button{
+    background-color: #DA2A1C;
+    color: white;
+    border: none;
+}

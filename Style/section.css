@@ -50,6 +50,8 @@ section .container .nema img{
 @media screen and (min-width: 768px){
     section .container{
         display: flex;
+        width: 700px;
+        margin: auto;
         flex-direction: row-reverse;
     }
     section .container .text-content{
@@ -68,6 +70,7 @@ section .container .nema img{
         padding: 0px 0px;
     }
 }
+
 
 @media screen and (min-width: 992px){
     section .container{

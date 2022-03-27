@@ -22,13 +22,13 @@ article .offers .action-btn button{
     border-bottom: 2px solid grey;
     padding: 10px;
 }
-article .offers .action-btn button:hover{
+article .offers .action-btn .active{
     font-size: 15px;
     font-weight: 900;
     background-color: inherit;
     border: none;
     border-bottom: 2px solid red;
-}
+} 
 article .offers .offers-cards{
     margin: 20px 0px;
     padding: 10px;
@@ -54,7 +54,7 @@ article .offers .offers-cards .offer-card:hover{
     display: inline-block;
 }
 article .offers .offers-cards .offer-card .head,.center,#price,.icons,.footer{
-    margin: 20px;
+    margin: 5px;
 }
 article .offers .offers-cards .offer-card .footer button{
     border:none;

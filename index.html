@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="./Style/section.css">
     <link rel="stylesheet" href="./Style/aside.css">
     <link rel="stylesheet" href="./Style/article.css">
+    <link rel="stylesheet" href="./Style/slider.css">
+    <link rel="stylesheet" href="./Style/footer.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>A1</title>
 </head>
@@ -131,29 +133,29 @@
                     <img src="./Assets/Image/KV-vertikal.jpg" alt="Nema sta nema" >
                 </div>
             </div>
-        </section>
-        <aside>
-            <div class="side-btn">
-                <button> 
-                    <span class="material-icons">
-                        support_agent
-                        </span>
-                </button>
-                <button>
-                    <span class="material-icons">
-                        shopping_cart
-                        </span>
-                </button>
-            </div>
-        </aside>
+            <aside>
+                <div class="side-btn">
+                    <button> 
+                        <span class="material-icons">
+                            support_agent
+                            </span>
+                    </button>
+                    <button>
+                        <span class="material-icons">
+                            shopping_cart
+                            </span>
+                    </button>
+                </div>
+            </aside>
+        </section>      
         <article>
             <div class="offers">
                 <div class="title"><h1>Izaberi svoj NEO</h1></div>
                 <div class="action-btn">
-                    <button>
+                    <button id="su" class="active">
                         Sa uređajem
                     </button>
-                    <button>
+                    <button id='bu'>
                         Bez uređaja
                     </button>
                 </div>
@@ -207,12 +209,12 @@
                         </div>
                         <div id="price">
                             <p> <del>2.899</del> </p>
-                            <h1>2.399</h1>
+                            <h1 id="setTopPrice">2.399</h1>
                             <span>RSD/mes</span>
                             <p>Uz 24 meseca ugovorne obaveze i e-račun</p>
                         </div>
                         <div class="footer">
-                            <button>Dodaj u korpu</button>
+                            <button class="changeHover">Dodaj u korpu</button>
                             <p> <u>Izaberi TV ili laptop</u> </p>
                         </div>
                     </div>
@@ -265,12 +267,12 @@
                         </div>
                         <div id="price">
                             <p> <del>2.899</del> </p>
-                            <h1>2.099</h1>
+                            <h1 id="setMiddlePrice">2.099</h1>
                             <span>RSD/mes</span>
                             <p>Uz 24 meseca ugovorne obaveze i e-račun</p>
                         </div>
                         <div class="footer">
-                            <button>Dodaj u korpu</button>
+                            <button class="changeHover">Dodaj u korpu</button>
                             <p> <u>Izaberi TV ili laptop</u> </p>
                         </div>
                     </div>
@@ -323,21 +325,125 @@
                         </div>
                         <div id="price">
                             <p> <del>1.899</del> </p>
-                            <h1>1.799</h1>
+                            <h1 id="setLowerPrice">1.799</h1>
                             <span>RSD/mes</span>
                             <p>Uz 24 meseca ugovorne obaveze i e-račun</p>
                         </div>
                         <div class="footer">
-                            <button>Dodaj u korpu</button>
+                            <button class="changeHover">Dodaj u korpu</button>
                             <p> <u>Izaberi TV ili laptop</u> </p>
                         </div>
                     </div>
                 </div>
             </div>
         </article>
+        <div class="slider">
+            <div class="photo">
+                <img id="slide" src="./Assets/Image/Rectangle 79.png" alt="slika">
+                <button id="left">
+                    <span class="material-icons">
+                        arrow_back_ios
+                    </span>
+                </button>
+                <button id="right" class="active">
+                    <span class="material-icons">
+                        arrow_forward_ios
+                        </span>
+                </button>
+            </div>
+            <div class="dodaci">
+                <div class="tekst1">
+                    <h1>Trebaju ti dodaci</h1>
+                    <p>Uzmi dodatne gigabajte</p>
+                    <button>Pogledaj dodatke 
+                        <span class="material-icons">
+                        done
+                        </span>
+                    </button>
+                </div>
+                <div class="tekst2">
+                    <h1>Prensi broj u A1</h1>
+                    <p>Saznaj vise</p>
+                    <button>Pogledaj dodatke 
+                        <span class="material-icons">
+                        done
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="section-one">
+                <div class="footer-img">
+                    <div class="footer-img-text">
+                        <h2>Preuzmi Moj A1 aplikaciju</h2>
+                        <span>i u svakom trenutku proveri stanje na racunu. Aktiviraj dodatke i budi u toku sa aktuelnostima.</span>
+                        <div class="footer-img-btn">
+                            <button>App store</button>
+                            <button>Google Play</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-description">
+                    <div class="footer-info">
+                        <div class="wrapped-info">
+                            <h3>A1 Srbija</h3>
+                            <p>O nama</p>
+                            <p>Press centar</p>
+                            <p>Podrska zajednici</p>
+                            <p>Karijera</p>
+                            <p>A1 mreza</p>
+                        </div>
+                        <div>
+                            <h3>Prodajna mesta</h3>
+                            <p>Online prodavnica</p>
+                            <p>A1 centri</p>
+                        </div>
+                        <div>
+                            <h3>Informacije</h3>
+                            <p>Podrska</p>
+                            <p>Cenovnici i opsti uslovi</p>
+                            <p>Politika zastite licnih podataka</p>
+                            <p>Obavestenja za korisnike</p>
+                        </div>
+                    </div>
+                    <div class="footer-contact">
+                        <div class="contact-info">
+                            <h3>Kontakt za privatne korisnike</h3>
+                            <p>060 1234 (00-24h)</p>
+                            <p>Pisi nam</p>
+                        </div>
+                        <div class="contact-info">
+                            <h3>Kontakt za poslovne korisnike</h3>
+                            <p>060 1230 (08-20h)</p>
+                            <p>Pisite nam</p>
+                        </div>
+                        <div class="social-icons">
+                            <h3>Icons goes here</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-two">
+                <div class="reserve-rights">
+                    <p>2021 A1 moville d.o.o. Sva prava zadrzana</p>
+                </div>
+                <div class="a1-links">
+                    <a href="#">A1 Srbija</a>
+                    <a href="#">A1 Austrija</a>
+                    <a href="#">A1 Belorusija</a>
+                    <a href="#">A1 Bugarska</a>
+                    <a href="#">A1 Makedonija</a>
+                    <a href="#">A1 Slovenija</a>
+                    <a href="#">A1 FL1</a>
+                </div>
+            </div>
+        </footer>
     </div>
     
     
     <script src="./Scripts/hamburger.js"></script>
+    <script src="./Scripts/priceChengeArticle.js"></script>
+    <script src="./Scripts/slider.js"></script>
 </body>
 </html>

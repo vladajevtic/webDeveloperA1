@@ -1,7 +1,8 @@
+
 aside .side-btn{
     position: fixed;
     top: 250px;
-    right: 0;
+    right: 5px;
     height: 150px;
     display: flex;
     flex-direction: column;
