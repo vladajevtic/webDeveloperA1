@@ -35,7 +35,7 @@
 
 .slider .photo #right span{
     font-size: 80px;
-    color: rgba(240, 248, 255, 0.301);
+    color: rgba(240, 248, 255, 0.5);
 }
 .slider .photo #right span:hover{
     color:rgba(0, 0, 0, 0.678);
